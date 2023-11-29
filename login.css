@@ -1,0 +1,115 @@
+body {
+    background-color: #1e555c; 
+    height: 900px; 
+}
+
+.container { 
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.col-md-6 {
+    height: 80%;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    border-radius: 10px;
+}
+.form-control {
+    width: 300px;
+    align-items: center;
+    margin-top: 2px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.btn {
+    background-color:  #1e555c;
+    box-shadow: none;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 2px;
+    padding-left: 115px;
+    padding-right: 115px;   
+}
+
+.btn:hover, .btn:focus {
+    background-color: #9AD0C2;
+    transition: all 1s;
+}
+
+.forgotps {
+    align-self: flex-end;
+    text-decoration: none;
+    font-size: 1rem;
+    color: grey;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.forgotps:hover, forgotps:focus {
+    color: #9AD0C2;
+}
+.inputs {
+    margin-top: 50px;
+}
+.label {
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+
+#username {
+    padding-left: 25px;
+    background: url("data:image/png;base64,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") no-repeat left;
+    background-size: 20px;
+}
+
+#password {
+    padding-left: 25px;
+    background: url("https://www.svgrepo.com/show/506724/lock.svg") no-repeat left;
+    background-size: 20px;
+}
+
+.h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.signup {
+    font-size: 13px;
+    text-decoration: none;
+    color: grey;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.signup.text-center {
+    margin-top: 80px;
+}
+
+.logos {
+    padding-top: 15px;
+}
+
+.sgnbtn {
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.singup:focus, .signup:hover {
+    color: #9AD0C2;
+}
+
+.sgnbtn:focus, .sgnbtn:hover {
+    color: #1e555c;
+}
